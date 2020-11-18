@@ -41,7 +41,7 @@
             }
         ],
         "outputs": {
-            "storageAccountName": "[steps('step1').saname]"
+            "storageAccountName": "samdkliusdfkusb" //[steps('step1').saname]
         }
     }
 }
