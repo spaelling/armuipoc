@@ -41,7 +41,6 @@
             }
         ],
         "outputs": {
-            // "storageAccountName": "sanfkjldsfk9",
             "storageAccountName": "[steps('step1').saname]"
         }
     }
