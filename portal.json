@@ -41,7 +41,8 @@
             }
         ],
         "outputs": {
-            "storageAccountName": "[steps('step1').TextBox1]"
+            "storageAccountName": "sanfkjldsfk9",
+            "storageAccountName2": "[steps('step1').TextBox1]"
         }
     }
 }
