@@ -1,0 +1,47 @@
+{
+    "handler": "Microsoft.Azure.CreateUIDef",
+    "version": "0.1.2-preview",
+    "parameters": {
+        "basics": [
+            {}
+        ],
+        "steps": [
+            {
+                "name": "step1",
+                "label": "mylabel",
+                "subLabel": {
+                    "preValidation": "preValidation",
+                    "postValidation": "postValidation"
+                },
+                "bladeTitle": "bladeTitle",
+                "elements": [
+                    {
+                        "name": "infoBox1",
+                        "type": "Microsoft.Common.InfoBox",
+                        "visible": true,
+                        "options": {
+                            "icon": "Info",
+                            "text": "some text",
+                            "uri": "https://google.com"
+                        }
+                    },
+                    {
+                        "name": "TextBox1",
+                        "type": "Microsoft.Common.TextBox",
+                        "label": "label",
+                        "toolTip": "toolTip",
+                        "defaultValue": "",
+                        "constraints": {
+                            "required": true,
+                            "regex": "^[a-z0-9A-Z-]{1,5}$",
+                            "validationMessage": "The prefix must be 1-5 characters."
+                        }
+                    }
+                ]
+            }
+        ],
+        "outputs": {
+            "enterpriseScaleCompanyPrefix": "[steps('step1').TextBox1]"
+        }
+    }
+}
