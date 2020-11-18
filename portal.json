@@ -28,9 +28,8 @@
                     {
                         "name": "saname",
                         "type": "Microsoft.Common.TextBox",
-                        "label": "Storage account name",
+                        "label": "Storage_account_name",
                         "toolTip": "toolTip",
-                        "defaultValue": "saabcdefgh12345678",
                         "constraints": {
                             "required": true,
                             "regex": "^[a-z0-9A-Z-]{12,22}$",
