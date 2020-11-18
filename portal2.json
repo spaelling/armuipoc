@@ -48,7 +48,7 @@
                     {
                         "name": "opt02",
                         "type": "Microsoft.Common.OptionsGroup",
-                        "label": "Deploy storage account",
+                        "label": "Are you sure?",
                         "defaultValue": "No",
                         "toolTip": "If 'Yes' is selected then you will be asked again many times!",
                         "constraints": {
@@ -68,7 +68,7 @@
                     {
                         "name": "opt03",
                         "type": "Microsoft.Common.OptionsGroup",
-                        "label": "Deploy storage account",
+                        "label": "Are you 100% absolutely sure, LOL?",
                         "defaultValue": "No",
                         "toolTip": "If 'Yes' is selected then you will be asked again many times!",
                         "constraints": {
