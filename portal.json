@@ -8,7 +8,7 @@
         "steps": [
             {
                 "name": "step1",
-                "label": "mylabel",
+                "label": "step label",
                 "subLabel": {
                     "preValidation": "preValidation",
                     "postValidation": "postValidation"
@@ -26,11 +26,11 @@
                         }
                     },
                     {
-                        "name": "TextBox1",
+                        "name": "saname",
                         "type": "Microsoft.Common.TextBox",
-                        "label": "label",
+                        "label": "Storage account name",
                         "toolTip": "toolTip",
-                        "defaultValue": "",
+                        "defaultValue": "saabcdefgh12345678",
                         "constraints": {
                             "required": true,
                             "regex": "^[a-z0-9A-Z-]{12,22}$",
@@ -41,8 +41,8 @@
             }
         ],
         "outputs": {
-            "storageAccountName": "sanfkjldsfk9",
-            "storageAccountName2": "[steps('step1').TextBox1]"
+            // "storageAccountName": "sanfkjldsfk9",
+            "storageAccountName": "[steps('step1').saname]"
         }
     }
 }
