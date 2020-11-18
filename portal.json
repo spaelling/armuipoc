@@ -33,15 +33,15 @@
                         "defaultValue": "",
                         "constraints": {
                             "required": true,
-                            "regex": "^[a-z0-9A-Z-]{1,5}$",
-                            "validationMessage": "The prefix must be 1-5 characters."
+                            "regex": "^[a-z0-9A-Z-]{12,22}$",
+                            "validationMessage": "The storage account name must be 12-22 characters."
                         }
                     }
                 ]
             }
         ],
         "outputs": {
-            "enterpriseScaleCompanyPrefix": "[steps('step1').TextBox1]"
+            "storageAccountName": "[steps('step1').TextBox1]"
         }
     }
 }
